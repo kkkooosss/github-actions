@@ -25,6 +25,12 @@ jobs:
           echo "Command 1"
           echo "Command 2"
           echo "APP_NAME: ${{ env.APP_NAME }}"
+          
+      - name: Clone this repo to ubuntu-latest
+        uses: actions/checkout@1    
+      
+      - name: list dir PWD
+        run:  ls -la
  
  my_deploy:
    runs-on: ubuntu-latest

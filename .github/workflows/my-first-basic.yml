@@ -34,5 +34,5 @@ jobs:
        run: echo "Hellofrom deploy"
      
      - name: Deploy Package name rpint
-       run:  echo " DEPLOY PACKAGE NAME is ${{DEPLOY_PACKAGE_NAME}} "
+       run:  echo " DEPLOY PACKAGE NAME is ${{env.DEPLOY_PACKAGE_NAME}} "
  

@@ -24,7 +24,7 @@ jobs:
         run: |
           echo: "Command 1"
           echo: "Command 2"
-          echo: "APP_NAME: ${{ env.APP_NAME }}"
+#          echo: "APP_NAME: ${{ env.APP_NAME }}"
  
  my_deploy:
    runs-on: ubuntu-latest

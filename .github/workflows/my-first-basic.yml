@@ -41,4 +41,9 @@ jobs:
      
      - name: Deploy Package name rpint
        run:  echo " DEPLOY PACKAGE NAME is ${{env.DEPLOY_PACKAGE_NAME}} "
+     - name: Check aws packages on ubuntu-latest
+       run: aws --version
+     - name: Check zip version
+       run: zip --version  
+       
  

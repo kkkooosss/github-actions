@@ -27,7 +27,7 @@ jobs:
           echo "APP_NAME: ${{ env.APP_NAME }}"
           
       - name: Clone this repo to ubuntu-latest
-        uses: actions/checkout@1    
+        uses: actions/checkout@v1    
       
       - name: list dir PWD
         run:  ls -la

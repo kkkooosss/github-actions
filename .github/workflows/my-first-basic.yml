@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Just-basics-Action
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches:
+      - master
+  
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+ my_testing:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print Hello from tetsing
+        run: echo "Hello from testing"
+ 
+ my_deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Ptint Hello from deploy
+       run: echo "Hellofrom deploy"
+ 
+ 
